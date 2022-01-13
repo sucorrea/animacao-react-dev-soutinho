@@ -9,7 +9,7 @@ const App = () => {
   const [isLiked, setLikeState] = useState(false);
   const [animationState, setAnimationState] = useState({
     isStopped: true, isPaused: false,
-    direction: -1,
+    direction: -0.5,
   });
 
   const defaultOptions = {
@@ -25,8 +25,8 @@ const App = () => {
     <>
       <ButtonWrapperStyle
         onClick={() => {
-          const reverseAnimation = -1;
-          const normalAnimation = 1;
+          const reverseAnimation = -0.5;
+          const normalAnimation = 0.5;
   
           setAnimationState({
             ...animationState,
@@ -47,7 +47,7 @@ const App = () => {
               isPaused={animationState.isPaused}/>
           </div>
       </ButtonWrapperStyle>
-      {/* <spam>{isLiked ? 1 : 0}</spam> */}
+      {/* <spam>{isLiked ? 0.5 : 0}</spam> */}
     </>
   );
 };
