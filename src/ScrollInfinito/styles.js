@@ -1,6 +1,10 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
+*{
+  padding: 0;
+  margin:0;
+}
   body {
     font-family: sans-serif;
   }
@@ -8,13 +12,14 @@ export const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
   }
   ul {
-    width: 300px;
+    width: 600px;
     height: 600px;
     overflow-y: scroll;
     padding: 0;
-    background-color: #ddd;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
   }
   li {
     height: 150px;
@@ -25,11 +30,14 @@ export const GlobalStyle = createGlobalStyle`
     width: var(--size);
     height: var(--size);
     border-radius: 50%;
+    display: flex;
+    
   }
   li div {
     padding: 15px;
-    background-color: #fff;
+    background-color: #FF9A8B;
     height: calc(100% - 30px);
+    justify-content: center;
   }
   #sentinela {
     width: 100%;

@@ -7,7 +7,7 @@ const ScrollInfinito = () => {
 
     useEffect(() => {
       const perPage = 10;
-      const ENDPOINT = "https:api.github.com/users/omariosouto/followers";
+      const ENDPOINT = "https:api.github.com/users/sucorrea/followers";
       const URL = `${ENDPOINT}?per_page=${perPage}&page=${currentPage}&order=DESC`;
       fetch(URL)
         .then((response) => response.json())

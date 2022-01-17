@@ -1,12 +1,10 @@
 import React from "react";
-// import Animacao from "./Animacao";
-import ScrollInfinito from "./ScrollInfinito";
+import Animacao from "./Animacao";
 
 const App = () => {
   return (
     <div>
-      <ScrollInfinito />
-      {/* <Animacao /> */}
+      <Animacao />
     </div>
   );
 };
